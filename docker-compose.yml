@@ -1,0 +1,6 @@
+version: "3.8"
+services:
+    nodejs-service-timestamp:
+        build: ./services/nodejs-service-timestamp
+        ports:
+          - 4100:4100

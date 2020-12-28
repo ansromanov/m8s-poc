@@ -11,6 +11,12 @@
 
 Write about 1-2 paragraphs describing the purpose of your project.
 
+This project use following articles as a source:
+
+### NodeJS
+[Learn Node.js by building a Timestamp Microservice app](https://freshman.tech/microservice/)
+[Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+
 ## Getting Started <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.

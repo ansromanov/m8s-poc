@@ -4,3 +4,12 @@ services:
         build: ./services/nodejs-service-timestamp
         ports:
           - 4100:4100
+        environment: 
+          - PORT=4100
+    nodejs-express-service-zipcodes:
+        build: ./services/nodejs-express-service-zipcodes
+        ports:
+          - 4200:4200
+        environment: 
+          - PORT=4200
+          - ZIPCODE_API_KEY=Pu63zKEoCgidbnau62EUcYl0xKqTm8fsPLRH4nf2N6EyJLMpc6UJ8JiDXMJU1rJV

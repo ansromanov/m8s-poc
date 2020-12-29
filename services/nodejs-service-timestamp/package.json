@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-service",
+  "version": "1.0.0",
+  "description": "nodejs microservice demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrey Romanov",
+  "license": "MIT",
+  "engines": {
+    "node": "12.0.0"
+  }
+}

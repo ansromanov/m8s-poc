@@ -49,19 +49,27 @@ docker-compose up
 - [ ] Create CI pipelines (lint, build code, create containers, push to some container registry) using GitHub Actions and Travis
 - [ ] Add support for local Kubernetes (minikube or docker k8s)
 - [ ] Some infrastructure code (Terraform or Pulumi) for K8S clusters deployment in AWS, GCP, Azure
-- [ ] Rewrite code to create real microservice application with different microservices integration
+- [ ] Rewrite code to create real microservice application with different microservices integration (REST, gRPC/protocol buffers)
 - [ ] Add monitoring support (Prometheus, Grafana, ...)
-- [ ] Tracing (Jaeger, ...)
+- [ ] Tracing (Jaeger, Zipkin, ...)
 
 ## References <a name = "references"></a>
 
 This project use following articles as a source:
 
+### Go
+
+- [Build a gRPC server in Go](https://dev.to/dsckiitdev/build-a-grpc-server-in-go-1890)
+
 ### NodeJS
 
-[Learn Node.js by building a Timestamp Microservice app](https://freshman.tech/microservice/)
-[Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
-[Beginners Guide to Building Real-World Microservices with Node.js](https://blog.cloud66.com/beginners-guide-to-building-real-world-microservices-with-node-js/)
+- [Learn Node.js by building a Timestamp Microservice app](https://freshman.tech/microservice/)
+- [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+- [Beginners Guide to Building Real-World Microservices with Node.js](https://blog.cloud66.com/beginners-guide-to-building-real-world-microservices-with-node-js/)
+
+### Other
+
+- [Protocol buffers](https://developers.google.com/protocol-buffers/docs/overview)
 
 ## See Also <a name = "see_also"></a>
 

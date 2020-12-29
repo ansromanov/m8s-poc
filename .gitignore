@@ -8,3 +8,7 @@
 node_modules/
 # Optional npm cache directory
 .npm
+
+#Go
+# Test binary, built with `go test -c`
+*.test

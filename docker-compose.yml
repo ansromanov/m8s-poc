@@ -1,15 +1,21 @@
 version: "3.8"
 services:
+    go-service-grpc-book:
+        build: ./services/go-service-grpc-book
+        ports:
+          - 4000:4000
+        environment: 
+          - PORT=4000
     nodejs-service-timestamp:
         build: ./services/nodejs-service-timestamp
         ports:
-          - 4100:4100
+          - 4010:4010
         environment: 
-          - PORT=4100
+          - PORT=4010
     nodejs-express-service-zipcodes:
         build: ./services/nodejs-express-service-zipcodes
         ports:
-          - 4200:4200
+          - 4020:4020
         environment: 
-          - PORT=4200
+          - PORT=4020
           - ZIPCODE_API_KEY=Pu63zKEoCgidbnau62EUcYl0xKqTm8fsPLRH4nf2N6EyJLMpc6UJ8JiDXMJU1rJV

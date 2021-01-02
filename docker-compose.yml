@@ -19,3 +19,23 @@ services:
         environment: 
           - PORT=4020
           - ZIPCODE_API_KEY=Pu63zKEoCgidbnau62EUcYl0xKqTm8fsPLRH4nf2N6EyJLMpc6UJ8JiDXMJU1rJV
+    zmqclient:
+      image: zmqclient
+      build:
+        context: .
+        dockerfile: ./services/python-zmqclient-service/Dockerfile
+      volumes:
+        - ./services/python-zmqclient-service:/app
+      restart: always
+    zmqserver:
+      image: zmqserver
+      build:
+        context: .
+        dockerfile: ./services/python-zmqserver-service/Dockerfile
+      environment:
+        - FLASK_ENV=development
+      ports:
+        - 4030:5010
+      volumes:
+        - ./services/python-zmqserver-service:/app
+      restart: always      

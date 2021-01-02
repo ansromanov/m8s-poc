@@ -20,12 +20,12 @@
 			],
 			"dockerRun": {
 				"env": {
-					"FLASK_APP": "services/user-service/app.py"
+					"FLASK_APP": "app.py"
 				}
 			},
 			"volumes": [
 				{
-				  "containerPath": "/app", "localPath": "${workspaceFolder}"
+				  "containerPath": "/app", "localPath": "${workspaceFolder}/services/user-service"
 				}
 			  ],
 			"python": {

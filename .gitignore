@@ -17,4 +17,10 @@ node_modules/
 .npm
 
 # Python
-__pycache__
+# Byte-compiled / optimized / DLL files
+__pycache__/
+# Distribution / packaging
+.Python
+# Flask stuff:
+instance/
+.webassets-cache

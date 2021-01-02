@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "/Users/aromanov/venv/bin/python",
+    "python.analysis.extraPaths": [
+        "services/get-links-service",
+        "services/user-service"
+    ]
+
+}

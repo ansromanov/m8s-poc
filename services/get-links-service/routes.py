@@ -16,10 +16,12 @@ def set_routes(app):
         return True
 
     @app.route('/', methods=['GET'])
+    @api.doc(params={})
     def root():
         return 'Hello World!'
 
     @app.route('/healthz', methods=['GET', 'POST'])
+    @api.doc(params={})
     def healthz():
         """
         /api entpoint
@@ -38,9 +40,11 @@ def set_routes(app):
             else:
                 return jsonify({'status': 'bad input'}), 400
 
-        return 'Hello World!'
+        else:
+            return jsonify({'status': 'Bad method'})
 
     @app.route('/urls', methods=['GET'])
+    @api.doc(params={})
     def urls():
         url='https://www.citilink.ru/catalog/'
         page = requests.get(url)

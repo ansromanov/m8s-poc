@@ -1,0 +1,8 @@
+### Get healthcheck
+GET http://localhost:5000/healthz HTTP/1.1
+
+### Get URLs
+GET http://localhost:5000/api/users HTTP/1.1
+
+### Wrong URL
+GET http://localhost:5000/rwrw HTTP/1.1

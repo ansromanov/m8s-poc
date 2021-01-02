@@ -1,7 +1,14 @@
 # General
 .DS_Store
-.idea
-.vscode
+.venv
+!.vscode
+
+# Databases
+.dbdata
+
+# Go
+# Test binary, built with `go test -c`
+*.test
 
 # NodeJS
 # Dependency directories
@@ -9,6 +16,5 @@ node_modules/
 # Optional npm cache directory
 .npm
 
-#Go
-# Test binary, built with `go test -c`
-*.test
+# Python
+__pycache__

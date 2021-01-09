@@ -2,7 +2,8 @@
 .DS_Store
 .venv
 venv
-!.vscode
+.vscode/settings.json
+.json
 *.log
 
 # Databases

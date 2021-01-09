@@ -1,9 +1,0 @@
-{
-    "python.pythonPath": "/home/aromanov/venv/bin/python",
-    "python.analysis.extraPaths": [
-        "services/get-links-service",
-        "services/python-zmq-service",
-        "services/user-service"
-    ]
-
-}

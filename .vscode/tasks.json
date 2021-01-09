@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "docker-build",
+			"label": "docker-build: user-service",
+			"platform": "python",
+			"dockerBuild": {
+				"tag": "m8spoc:latest",
+				"dockerfile": "${workspaceFolder}/services/user-service/Dockerfile",
+				"context": "${workspaceFolder}",
+				"pull": true
+			}
+		},
+		{
+			"type": "docker-run",
+			"label": "docker-run: debug user-service",
+			"dependsOn": [
+				"docker-build: user-service"
+			],
+			"dockerRun": {
+				"env": {
+					"FLASK_APP": "app.py"
+				}
+			},
+			"volumes": [
+				{
+				  "containerPath": "/app", "localPath": "${workspaceFolder}/services/user-service"
+				}
+			  ],
+			"python": {
+				"args": [
+					"run",
+					// "--no-debugger",
+					// "--no-reload",
+					"--host",
+					"0.0.0.0",
+					"--port",
+					"5000"
+				],
+				"module": "flask"
+			}
+		}
+	]
+}

@@ -19,3 +19,36 @@ services:
         environment: 
           - PORT=4020
           - ZIPCODE_API_KEY=Pu63zKEoCgidbnau62EUcYl0xKqTm8fsPLRH4nf2N6EyJLMpc6UJ8JiDXMJU1rJV
+    zmqclient:
+      image: zmqclient
+      build: ./services/python-zmqclient-service
+      environment:
+        - FLASK_ENV=development
+        - ZMQHOST=zmqserver
+        - ZMQPORT=5556
+      expose:
+        - 5556
+      networks:
+        - microservices
+      volumes:
+        - ./services/python-zmqclient-service:/app
+      restart: always
+    zmqserver:
+      image: zmqserver
+      build: ./services/python-zmqserver-service
+      environment:
+        - FLASK_ENV=development
+        - ZMQHOST=localhost
+        - ZMQPORT=5556
+      ports:
+        - 4030:5010
+      expose:
+        - 5556
+      networks:
+        - microservices
+      volumes:
+        - ./services/python-zmqserver-service:/app
+      restart: always      
+networks:
+  microservices:
+    driver: bridge

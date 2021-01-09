@@ -4,10 +4,11 @@ import sys
 import logging
 import zmq
 
-HOST = '127.0.0.1'
-PORT = '5556'
+HOST = os.environ.get('ZMQHOST') or '127.0.0.1'
+PORT = os.environ.get('ZMQPORT') or '5556'
 
-logging.basicConfig(filename='subscriber.log', level=logging.INFO)
+
+logging.basicConfig(filename="test.log", level=logging.INFO)
 
 class ZClient(object):
     def __init__(self, host=HOST, port=PORT):

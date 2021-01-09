@@ -1,8 +1,9 @@
 import time
+import os
 import zmq
 
-HOST = '127.0.0.1'
-PORT = '5556'
+HOST = '0.0.0.0'
+PORT = os.environ.get('ZMQPORT') or '5556'
 
 context = zmq.Context()
 publisher = context.socket(zmq.PUB)

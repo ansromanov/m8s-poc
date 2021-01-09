@@ -17,9 +17,4 @@ WORKDIR /app
 RUN useradd appuser && chown -R appuser /app
 USER appuser
 
-# Zmq Sub Server
-EXPOSE 4444
-
-# Expose Flask
-EXPOSE 5000
 CMD ["python", "zmqclient.py"]

@@ -1,7 +1,9 @@
 # General
 .DS_Store
 .venv
+venv
 !.vscode
+*.log
 
 # Databases
 .dbdata

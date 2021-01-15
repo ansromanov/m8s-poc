@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    command: python app.py
+    ports:
+      - 5000:5000
+    networks:
+      - python-redis
+    volumes:
+      - .:/app
+
+  redis:
+    image: redis
+    networks:
+      - python-redis
+
+networks:
+  python-redis:
+    driver: bridge

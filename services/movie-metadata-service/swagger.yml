@@ -1,0 +1,88 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file that goes with our server code
+  version: "1.0.0"
+  title: Swagger REST Article
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+basePath: "/api"
+
+# Paths supported by the server application
+paths:
+  /movies/{movie_name}:
+    get:
+      operationId: "api.movies.list_movies"
+      tags:
+        - "Movies"
+      summary: "The movie data structure supported by the server application"
+      description: "Read the list of movies"
+      parameters:
+        - name: movie_name
+          in: path
+          description: Part of movie name in IMBD database
+          type: string
+          required: True
+      responses:
+        200:
+          description: "Successful read movie list operation"
+          schema:
+            type: "array"
+            items:
+              properties:
+                fname:
+                  type: "string"
+                lname:
+                  type: "string"
+                timestamp:
+                  type: "string"
+  /movie/id/{movie_id}:
+    get:
+      operationId: "api.movie.get_movie_by_id"
+      tags:
+        - "Movie"
+      summary: "The movie data structure supported by the server application"
+      description: "Get movie metadata by movie id"
+      parameters:
+        - name: movie_id
+          in: path
+          description: Movie ID in IMBD database
+          type: string
+          required: True
+      responses:
+        200:
+          description: "Successful read movie metadata read operation"
+          schema:
+            type: "array"
+            items:
+              properties:
+                movie_id:
+                  type: "string"
+                title:
+                  type: "string"
+  /movie/name/{movie_name}:
+    get:
+      operationId: "api.movie.get_movie_by_name"
+      tags:
+        - "Movie"
+      summary: "The movie data structure supported by the server application"
+      description: "Get movie metadata by movie name"
+      parameters:
+        - name: movie_name
+          in: path
+          description: Movie ID in IMBD database
+          type: string
+          required: True
+      responses:
+        200:
+          description: "Successful read movie metadata read operation"
+          schema:
+            type: "array"
+            items:
+              properties:
+                movie_id:
+                  type: "string"
+                title:
+                  type: "string"

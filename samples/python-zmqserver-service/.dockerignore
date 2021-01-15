@@ -1,0 +1,10 @@
+**/.dbdata
+**/__pycache__
+**/.dockerignore
+**/.env
+**/.git
+**/.gitignore
+**/.vscode
+**/docker-compose*
+**/Dockerfile*
+README.md

@@ -5,6 +5,7 @@ venv
 .vscode/settings.json
 .json
 *.log
+.direnv
 
 # Databases
 .dbdata

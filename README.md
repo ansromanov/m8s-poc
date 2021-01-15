@@ -1,77 +1,114 @@
-# Multi-language microservices PoC
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+</p>
 
-## Table of Contents
+<h3 align="center">Project Title</h3>
+
+<div align="center">
+
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+
+---
+
+<p align="center"> Few lines describing your project.
+    <br> 
+</p>
+
+## 📝 Table of Contents
 
 - [About](#about)
 - [Getting Started](#getting_started)
+- [Deployment](#deployment)
 - [Usage](#usage)
-- [Roadmap](#roadmap)
+- [Built Using](#built_using)
+- [TODO](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
-- [References](#references)
-- [See Also](#see_also)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
 
-## About <a name = "**about**"></a>
+## 🧐 About <a name = "about"></a>
 
-This is a research project how to create a cloud native application.
+Write about 1-2 paragraphs describing the purpose of your project.
 
-## Getting Started <a name = "getting_started"></a>
+## 🏁 Getting Started <a name = "getting_started"></a>
 
-TO DO
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-Currently the only prerequisites are Docker and Docker Compose.
+What things you need to install the software and how to install them.
+
+```
+Give examples
+```
 
 ### Installing
 
-## Usage <a name = "usage"></a>
+A step by step series of examples that tell you how to get a development env running.
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo.
+
+## 🔧 Running the tests <a name = "tests"></a>
+
+Explain how to run the automated tests for this system.
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## 🎈 Usage <a name="usage"></a>
 
 Add notes about how to use the system.
 
-```sh
-docker-compose build
+## 🚀 Deployment <a name = "deployment"></a>
 
-docker-compose up
-```
+Add additional notes about how to deploy this on a live system.
 
-## Roadmap <a name = "roadmap"></a>
+## ⛏️ Built Using <a name = "built_using"></a>
 
-- [ ] Investigate and add some mock microservices in different languages and frameworks
-  - [x] JavaScript (NodeJS, Express)
-  - [ ] Python (Flask, FastAPI)
-  - [ ] .NET (C#)
-  - [ ] Java
-  - [ ] Go
-  - [ ] Ruby
-- [ ] Create pre-commit hooks and add linters
-- [ ] Create Dockerfiles and add compose support
-- [ ] Create mock for unit tests (2-3 for each microservice)
-- [ ] Create CI pipelines (lint, build code, create containers, push to some container registry) using GitHub Actions and Travis
-- [ ] Add support for local Kubernetes (minikube or docker k8s)
-- [ ] Some infrastructure code (Terraform or Pulumi) for K8S clusters deployment in AWS, GCP, Azure
-- [ ] Rewrite code to create real microservice application with different microservices integration (REST, gRPC/protocol buffers)
-- [ ] Add monitoring support (Prometheus, Grafana, ...)
-- [ ] Tracing (Jaeger, Zipkin, ...)
+- [MongoDB](https://www.mongodb.com/) - Database
+- [Express](https://expressjs.com/) - Server Framework
+- [VueJs](https://vuejs.org/) - Web Framework
+- [NodeJs](https://nodejs.org/en/) - Server Environment
 
-## References <a name = "references"></a>
+## ✍️ Authors <a name = "authors"></a>
 
-This project use following articles as a source:
+- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
 
-### Go
+See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
 
-- [Build a gRPC server in Go](https://dev.to/dsckiitdev/build-a-grpc-server-in-go-1890)
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-### NodeJS
-
-- [Learn Node.js by building a Timestamp Microservice app](https://freshman.tech/microservice/)
-- [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
-- [Beginners Guide to Building Real-World Microservices with Node.js](https://blog.cloud66.com/beginners-guide-to-building-real-world-microservices-with-node-js/)
-
-### Other
-
-- [Protocol buffers](https://developers.google.com/protocol-buffers/docs/overview)
-
-## See Also <a name = "see_also"></a>
-
-- [https://github.com/Joker666/microservice-demo](https://github.com/Joker666/microservice-demo)
-- [https://github.com/GoogleCloudPlatform/microservices-demo](https://github.com/GoogleCloudPlatform/microservices-demo)
+- Hat tip to anyone whose code was used
+- Inspiration
+- References
